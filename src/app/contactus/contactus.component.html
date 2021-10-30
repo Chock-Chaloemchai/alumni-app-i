@@ -1,1 +1,104 @@
-<p>contactus works!</p>
+
+<div class="card">
+    <div class="card-header ">
+      <h4>ที่อยู่</h4>
+    </div>
+    <div class="row mb-3">
+        <div class="col-7 ml-5">
+            <div class="card-body mt-3">
+                <h5 class="card-title"> <img src="https://img.icons8.com/color/30/000000/marker--v2.png" class="mr-1"/>มหาวิทยาลัยเกษตรศาสตร์ วิทยาเขตศรีราชา</h5>
+                <p class="card-text mt-3">เลขที่ 199 หมู่ 6 ถนนสุขุมวิท ต.ทุ่งสุขลา อ.ศรีราชา จ.ชลบุรี 20230</p>
+                <p class="card-text mt-3">โทรศัพท์ : 0-3835-4580-4 (666103)</p>
+              </div>
+        </div>
+        <div class="col-3 mt-3">
+            <img src="https://fastly.4sqi.net/img/general/width960/3706803_ss_exo8CG44Ebj3xNJUx5Mxnt9NqF6wH2ZKd-fj3acM.jpg" width="1000px" class="img-thumbnail" alt="...">
+        </div>
+    </div>
+ </div>
+
+ <div class="card mt-4">
+    <div class="card-header ">
+      <h4>หมายเลขโทรศัพท์หน่วยงาน</h4>
+    </div>
+    <div class="row mb-3">
+        <div class="col-4 ml-5">
+            <div class="card-body">
+                <h5 class="card-text mt-3">คณะวิทยาการจัดการ</h5>
+                <p class="card-text mt-3">โทรศัพท์ : 0-3835-2828 (661000)</p>
+
+                <h5 class="card-text mt-3">คณะวิศวกรรมศาสตร์ศรีราชา</h5>
+                <p class="card-text mt-3">โทรศัพท์ : 0-3835-4580-4 (662202)</p>
+
+                <h5 class="card-text mt-3">คณะวิทยาศาสตร์ ศรีราชา</h5>
+                <p class="card-text mt-3">โทรศัพท์ : 0-3835-4587-8 (663014)</p>
+
+            </div>
+        </div>
+        <div class="col-7 ml-5">
+            <div class="card-body">
+                <h5 class="card-text mt-3">คณะเศรษฐศาสตร์ ศรีราชา</h5>
+                <p class="card-text mt-3">โทรศัพท์ : 0-3835-2902, 081-781-0934 (664302)</p>
+
+                <h5 class="card-text mt-3">คณะพาณิชยนาวีนานาชาติ</h5>
+                <p class="card-text mt-3">โทรศัพท์ : 0-3835-4580-4 (665301)</p>
+
+                <h5 class="card-text mt-3">สำนักงานวิทยาเขต</h5>
+                <p class="card-text mt-3">โทรศัพท์ : 0-3835-4580-4 (666103)</p>
+
+            </div>
+        </div>
+    </div>
+ </div>
+
+ <div class="card mt-4">
+    <div class="card-header ">
+      <h4>ช่องทางออนไลน์</h4>
+    </div>
+    <div class="row mb-3">
+        <div class="col-7 ml-5">
+            <div class="card-body mt-3">
+                
+                <h5 class="card-title"> <img src="https://img.icons8.com/color/30/000000/facebook.png" class="mr-2"/>Facebook : KUSriracha</h5>
+                <h5 class="card-title"> <img src="https://img.icons8.com/color/30/000000/facebook.png" class="mr-2"/>Facebook : PR.KUSRC</h5>
+                <h5 class="card-title"> <img src="https://img.icons8.com/color/30/000000/instagram-new--v1.png" class="mr-2"/>Instagram : KUSRC.PR</h5>
+                <h5 class="card-title"> <img src="https://img.icons8.com/color/30/000000/twitter--v1.png" class="mr-2" />Twitter : KUSRC_Uni</h5>
+        
+              </div>
+        </div>
+    </div>
+ </div>
+ <form (ngSubmit)="onSubmit()"> 
+    <div class="mb-3 mt-4">
+      <h2 class="card-text mt-3">แบบฟอร์มการติดต่อสอบถาม</h2>
+      <label for="InputEmail" required class="form-label">อีเมลล์</label>
+      <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" [(ngModel)]="inputEmail">
+    </div>
+    <div class="mb-3">
+      <label for="title" class="form-label">หัวเรื่อง</label>
+      <input  class="form-control" required id="title" [(ngModel)]="title">
+    </div>
+    <div class="mb-3">
+        <label for="messeage" required class="form-label">ข้อความ</label>
+        <textarea class="form-control" id="messeage" rows="3" [(ngModel)]="messeage"></textarea>
+      </div>
+      <select class="form-select mb-4" required id="typeMesseage" aria-label="Default select example" [(ngModel)]="typeMesseage">
+        <option selected>ประเภท</option>
+        <option value="1">ยื่นคำร้องนิสิตออนไลน์</option>
+        <option value="2">ต้องการความช่วยเหลือ</option>
+        <option value="3">คำถาม</option>
+        <option value="4">รายงานเหตุการ/กิจกรรม</option>
+        <option value="5">ร้องเรียน</option>
+        <option value="6">ข้อเสนอแนะ</option>
+        <option value="7">อื่นๆ</option>
+      </select>
+ 
+      <select class="form-select mb-3" id="typeCampus" required aria-label="Default select example" [(ngModel)]="typeCampus">
+        <option selected>วิทยาเขต</option>
+        <option value="1">วิทยาเขตบางเขน</option>
+        <option value="2">วิทยาเขตศรีราชา</option>
+        <option value="3">วิทยาเขตกำแพงแสน</option>
+        <option value="4">วิทยาเขตเฉลิมพระเกียรติ จังหวัดสกลนคร</option>
+      </select>
+    <button type="submit " class="btn btn-primary ">Submit</button>
+  </form>

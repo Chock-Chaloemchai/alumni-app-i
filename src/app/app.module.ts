@@ -9,6 +9,7 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { EditdataComponent } from './editdata/editdata.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { FaqComponent } from './faq/faq.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FaqComponent } from './faq/faq.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
